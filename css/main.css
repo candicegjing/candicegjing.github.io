@@ -75,6 +75,7 @@ html, body {
   height: 100%;
 }
 
+
 body {
   background: #111860;
   font-family: "Nunito Sans", sans-serif;
@@ -188,6 +189,15 @@ p img {
 
 p.lead {
   font-family: "Nunito Sans", sans-serif;
+  font-weight: 300;
+  font-size: 2.7rem;
+  line-height: 1.667;
+  margin-bottom: 3.6rem;
+  color: #000000;
+}
+
+p.lead-chinese{
+  font-family: "Ma Shan Zheng";
   font-weight: 300;
   font-size: 2.7rem;
   line-height: 1.667;
@@ -334,7 +344,7 @@ abbr {
 }
 
 var, kbd, samp, code, pre {
-  font-family: Consolas, "Andale Mono", Courier, "Courier New", monospace;
+  font-family: Consolas, "Andale Mono", Courier, "Courier New", monospace, "KaiTi";
 }
 
 pre {
@@ -2581,7 +2591,7 @@ body.search-is-visible {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  overflow: auto;
+  overflow: true;
 }
 
 .featured__slide .entry__content {
@@ -4252,3 +4262,88 @@ footer [class*="s-footer__"] > .row [class*="col-"]:last-child {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(8, 2fr);
+  grid-template-rows: repeat(8, 10vw);
+  grid-gap: 0;
+}
+
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery__item--1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+
+  /** Alternative Syntax **/
+  /* grid-column: 1 / span 2;  */
+  /* grid-row: 1 / span 2; */
+}
+
+.gallery__item--2 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+
+  /** Alternative Syntax **/
+  /* grid-column: 3 / span 2;  */
+  /* grid-row: 1 / span 2; */
+}
+
+.gallery__item--3 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 6;
+
+  /** Alternative Syntax **/
+  /* grid-column: 5 / span 4;
+  grid-row: 1 / span 5; */
+}
+
+.gallery__item--4 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 6;
+
+  /** Alternative Syntax **/
+  /* grid-column: 1 / span 4;  */
+  /* grid-row: 3 / span 3; */
+}
+
+.gallery__item--5 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 6;
+  grid-row-end: 9;
+
+  /** Alternative Syntax **/
+  /* grid-column: 1 / span 4; */
+  /* grid-row: 6 / span 3; */
+}
+
+.gallery__item--6 {
+  grid-column-start: 1;
+  grid-column-end: 9;
+  grid-row-start: 6;
+  grid-row-end: 10;
+
+  /** Alternative Syntax **/
+  /* grid-column: 5 / span 4; */
+  /* grid-row: 6 / span 3; */
+}
+
+.chinese {
+  font-family: "Ma Shan Zheng";
+}
