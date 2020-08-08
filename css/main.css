@@ -4347,3 +4347,34 @@ footer [class*="s-footer__"] > .row [class*="col-"]:last-child {
 .chinese {
   font-family: "Ma Shan Zheng";
 }
+
+
+.portait-container {
+  display: flex;
+  width: 100%;
+  height: 100%
+  padding: 5% 0%;
+  box-sizing: border-box;
+  height: 50vh;
+}
+
+.portait-box {
+  flex: 1;
+  transition: .5s;
+  box-shadow: 0 20px 30px rgba(0,0,0,.1);
+  line-height: 0;
+}
+
+.portait-box > img {
+  width: 200%;
+  height: 100%;
+  object-fit: cover;
+  transition: .5s;
+}
+
+.portait-box:hover { flex: 1 1 40%; }
+
+.portait-box:hover > img {
+  width: 100%;
+  height: 100%;
+}

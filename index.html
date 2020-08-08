@@ -33,6 +33,7 @@
             margin-top: 0;
         }
     </style> 
+    <script> document.getElementById('seeyou').play(); </script>
 
     <!-- script
     ================================================== -->
@@ -108,10 +109,24 @@
     <section id="styles" class="s-styles">
     
         <div class="row narrow section-intro add-bottom text-center">
-
             <div class="col-twelve tab-full">
-                <h1 class="display-1 display-1--with-line-sep">Jing Ge</h1>
-                <h2>Welcome to my homepage! <i class="fa fa-heart" aria-hidden="true"></i></h2>
+                <h1 class="display-1">Jing Ge</h1>
+                    <h2>Welcome to my homepage! <i class="fa fa-heart" aria-hidden="true"></i></h2>
+                <div class="portait-container">
+                  <div class="portait-box">
+                    <img src="images/thumbs/featured/portrait_4.jpeg">
+                  </div>
+                    <div class="portait-box">
+                    <img src="images/thumbs/featured/portrait_2.jpg">
+                  </div>
+                    <div class="portait-box">
+                    <img src="images/thumbs/featured/portrait_5.jpg">
+                  </div>
+                    <div class="portait-box">
+                    <img src="images/thumbs/featured/portrait_6.jpeg">
+                  </div>
+                </div>
+                <p></p>
                 <p class="lead">I was raised in Beijing, China where I spent most of my time trying to grow up
                     to be a better person. Now, I am working as a software engineer. In my spare time, I am in love with reading, painting,
                     cooking and swimming. </p>
@@ -119,7 +134,15 @@
                     现在，作为一个标准的程序媛的我，爱生活、爱艺术，也在一直努力成为最好的自己～</p>
             </div>
 
+
         </div>
+
+        <iframe src="audio/see_you.mp3" type="audio/mp3" allow="autoplay" style="display: none"></iframe>
+            <audio id="seeyou" controls autoplay loop>
+                <source src="audio/see_you.mp3" type="audio/mp3">
+            </audio>
+            <!--<iframe width="100%" height="100" scrolling="no" frameborder="no" allow="autoplay" src="audio/see_you.mp3"></iframe> -->
+
 
     </section> <!-- end styles -->
 
