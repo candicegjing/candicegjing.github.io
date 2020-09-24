@@ -3164,10 +3164,10 @@ body.search-is-visible {
  *
  * ------------------------------------------------------------------- */
 footer {
-  padding-top: 10.2rem;
-  padding-bottom: 10.2rem;
+  padding-top: 1.0rem;
+  padding-bottom: 1.0rem;
   font-size: 1.5rem;
-  line-height: 2;
+  line-height: 1;
   color: rgba(255, 255, 255, 0.5);
 }
 
@@ -4355,7 +4355,7 @@ footer [class*="s-footer__"] > .row [class*="col-"]:last-child {
   height: 100%
   padding: 5% 0%;
   box-sizing: border-box;
-  height: 50vh;
+  height: 70vh;
 }
 
 .portait-box {
