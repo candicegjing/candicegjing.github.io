@@ -2885,7 +2885,7 @@ body.search-is-visible {
  * ## page and single entry main content
  * ------------------------------------------------------------------- */
 .s-content__main, .entry__main {
-  padding-left: 7rem;
+  padding-left: rem;
   padding-right: 7rem;
 }
 
